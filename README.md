@@ -1,6 +1,6 @@
 ** Bat-Ball-Wicket (Cricket Game) 🏏
 
-Bat-Ball-Wicket is aJavaScript-based cricket game that brings the spirit of cricket to your fingertips. Experience the excitement of the game by making strategic choices - whether to bat, ball, or take a crucial wicket. The computer responds with its move, and the result unfolds on the screen. Simple yet engaging, Bat-Ball-Wicket is designed for quick gameplay, making it an ideal choice for cricket enthusiasts and casual gamers alike. Immerse yourself in the world of cricket with this interactive and fun gaming experience! 
+Bat-Ball-Wicket is a JavaScript-based cricket game that brings the spirit of cricket to your fingertips. Experience the excitement of the game by making strategic choices - whether to bat, ball, or take a crucial wicket. The computer responds with its move, and the result unfolds on the screen. Simple yet engaging, Bat-Ball-Wicket is designed for quick gameplay, making it an ideal choice for cricket enthusiasts and casual gamers alike. Immerse yourself in the world of cricket with this interactive and fun gaming experience! 
 
 Explore These Live Links Of My Bat-Ball-Wicket Webapp:
 - 🌐 (https://Bat-Ball-Wicket.netlify.app/)

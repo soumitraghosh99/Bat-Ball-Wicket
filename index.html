@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bat-Ball-Wicket (Cricket Game)</title>
+  <link href="images/favicon.png" rel="icon">
+  <link rel="stylesheet" href="index.css" >
+</head>
+<body>
+  <section class="main_sec">
+    <h1>Play With Bat Ball And Wicket</h1>
+    <button class="button-choice" onclick="
+    let computerChoice = generateComputerChoice();
+    let resultMsg = getResult('Bat', computerChoice);
+    showResult('Bat',computerChoice, resultMsg);
+    "><img src="images/bat.png" alt="A cricket bat" class="choice-image"></button>
+  
+  <button class="button-choice" onclick="
+    computerChoice = generateComputerChoice();
+    resultMsg = getResult('Ball', computerChoice);
+    showResult('Ball',computerChoice, resultMsg);
+  "><img src="images/ball.png" alt="A cricket ball" class="choice-image"></button>
+    
+  <button class="button-choice" onclick="
+    computerChoice = generateComputerChoice();
+    resultMsg = getResult('Wicket', computerChoice);
+    showResult('Wicket',computerChoice, resultMsg);
+  "><img src="images/wicket.jpg" alt="A cricket stump" class="choice-image"></button>
+  
+  <div class="result-container">
+    <h3 id="user-move"></h3>
+    <h3 id="computer-move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
+  </div>
+  
+  <button onclick="localStorage.clear() 
+  resetScore();" class="button-btn">Reset</button>
+  
+  <button class="button-btn" id="info">Info</button>
+  
+  <div id="infoModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close-modal-btn">&times;</span>
+      <h2>Game Rules</h2>
+       <h3 class="pop-up">How to Play:</h3>
+       <p>
+        <ul>
+          <li>You have three choices: <b>Bat</b>, <b>Ball</b>, and <b>Wicket.</b></li>
+          <li>Click on the corresponding button to make your choice.</li>
+        </ul>
+      </p>
+      <h3 class="pop-up">Winning Scenarios:</h3>
+      <ol>
+        <li>
+          If you choose <b>Bat</b>:
+          <ul>
+            <li>If the computer also chooses <b>Bat</b>, it's a <b>Tie</b>.</li>
+            <li>If the computer chooses <b>Ball</b>, you <b>Win!</b></li>
+            <li>If the computer chooses <b>Wicket</b>, you <b>Lose.</b></li>
+          </ul>
+        </li>
+        <li>
+          If you choose <b>Ball</b>:
+          <ul>
+            <li>If the computer also chooses <b>Ball</b>, it's a <b>Tie</b>.</li>
+            <li>If the computer chooses <b>Bat</b>, the computer <b>Wins!</b>.</li>
+            <li>If the computer chooses <b>Wicket</b>, you <b>Win!</b></li>
+          </ul>
+        </li>
+        <li>
+          If you choose <b>Wicket</b>:
+          <ul>
+            <li>If the computer also chooses <b>Wicket</b>, it's a <b>Tie</b>.</li>
+            <li>If the computer chooses <b>Bat</b>, you <b>Win!</b></li>
+            <li>If the computer chooses <b>Ball</b>, the computer <b>Wins!</b>.</li>
+          </ul>
+        </li>
+      </ol>
+      <h3 class="pop-up">Results:</h3>
+      <p>
+        <ul>
+          <li>
+            After each round, the game will display the result.
+          </li>
+          <li>
+            Your goal is to have more wins than the computer.
+          </li>
+        </ul>
+      </p>
+      <h3 class="pop-up">Additional Actions:</h3>
+      <ul>
+        <li>Use the <b>Reset</b> button to clear the score.</li>
+        <li>Click the <b>Info</b> button for a quick reminder of the game rules.</li>
+      </ul>
+    </div>
+  </div>
+  </section>
+<script src="index.js"></script>
+</body>
+</html> 
